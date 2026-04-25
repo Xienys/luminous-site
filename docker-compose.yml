@@ -10,7 +10,7 @@ services:
       - NITRO_HOST=0.0.0.0
       - NODE_ENV=production
     ports:
-      - "50000:3000"
+      - "50030:3000"
     logging:
       driver: "json-file"
       options:
