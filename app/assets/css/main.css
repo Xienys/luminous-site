@@ -9,10 +9,7 @@
   .pixel-shadow {
   text-shadow: 5px 5px 0px #0974a0;
 }
-    
-
 }
-
 
 
 @theme static {
@@ -38,7 +35,7 @@
 }
 
 @font-face {
-  font-family: 'MinecraftTenLowercase';
+  font-family: 'MC Ten Lowercase Alt';
   src: url('/fonts/MinecraftTenLowercase.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;

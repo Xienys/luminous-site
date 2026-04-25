@@ -25,7 +25,7 @@ const items = [
         <UPageHeader class="border-none!">
             <UPageSection class="border-none!"
                 title="LUMINOUS"
-                :ui="{title: 'font-[Stopwatch] tracking-[.22em] sm:text-6xl! md:text-8xl! lg:text-9xl! xl:text-9xl text-6xl! pixel-shadow', wrapper: 'relative overflow-hidden', container: 'relative z-10'}">
+                :ui="{title: 'font-[Stopwatch] tracking-[.22em] sm:text-5xl! md:text-6xl! lg:text-9xl! xl:text-9xl text-6xl! pixel-shadow', wrapper: 'relative overflow-hidden', container: 'relative z-10'}">
                     <template #description>
                         <span class="">
                             <p class="text-white">
@@ -96,8 +96,8 @@ const items = [
             <UContainer>
                 <section id="guide">
                 <h1 class="text-center text-2xl py-10">Как попасть на сервер?</h1>
-                <UContainer class="relative flex items-center justify-center gap-x-8 gap-y-4 p-4 sm:p-6">
-                    <UPageCard class="font-[MinecraftTenLowercase] items-center lg:min-w-120 min-h-60 max-w-160"
+                <UContainer class="relative flex md:flex-col sm:flex-col items-center justify-center gap-x-8 gap-y-4 p-4 sm:p-6">
+                    <UPageCard class="font-[MinecraftTenLowercase] items-center sm:min-w-60 md:min-w-60 min-w-120 min-h-60 max-w-160"
                             description="Это совершенно бесплатно, рассматриваем в течение 1 рабочего дня."
                             icon="i-simple-icons-discord"
                             orientation="vertical"
@@ -112,7 +112,7 @@ const items = [
                                 <p class="text-white text-nowrap font-normal text-lg" >Подайте заявку <br> на нашем дискорд сервере</p>
                             </template>
                     </UPageCard>
-                    <UPageCard class="font-[MinecraftTenLowercase] items-center lg:min-w-120 min-h-60 max-w-160"
+                    <UPageCard class="font-[MinecraftTenLowercase] items-center sm:min-w-60 md:min-w-60 min-w-120 min-h-60 max-w-160"
                         description="Можно установить с помощью mrpack и zip"
                         icon="i-simple-icons-modrinth"
                         orientation="vertical"
@@ -126,7 +126,7 @@ const items = [
                             <p class="text-white text-nowrap font-normal text-lg" >Скачайте сборку</p>
                         </template>
                     </UPageCard>
-                    <UPageCard class="font-[MinecraftTenLowercase] items-center lg:min-w-120 min-h-60 max-w-160"
+                    <UPageCard class="font-[MinecraftTenLowercase] items-center sm:min-w-60 md:min-w-60 min-w-120 min-h-60 max-w-160"
                         icon="i-lucide-server"
                         description="По кнопке в главном меню или используя адресс: play.luminous-official.ru."
                         orientation="vertical"
