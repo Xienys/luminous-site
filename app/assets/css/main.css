@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+:root {
+  --ui-bg: #09090B;
+  --ui-primary: #08b7ff;
+  --ui-secondary: #0983b5;
+  --ui-success: #08b7ff;
+  .pixel-shadow {
+  text-shadow: 5px 5px 0px #0974a0;
+}
+    
+
+}
+
+
+
+@theme static {
+    --font-sans: 'Minecraft Ten', sans-serif;
+    --ui-text: white;
+    
+}
+
+@font-face {
+  font-family: 'MinecraftTen';
+  src: url('/fonts/MinecraftTen.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stopwatch';
+  src: url('/fonts/Stopwatch.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MinecraftTenLowercase';
+  src: url('/fonts/MinecraftTenLowercase.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

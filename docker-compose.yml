@@ -1,0 +1,18 @@
+services:
+  luminous-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: luminous_nuxt_app
+    restart: always
+    environment:
+      - NITRO_PORT=3000
+      - NITRO_HOST=0.0.0.0
+      - NODE_ENV=production
+    ports:
+      - "50000:3000"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
