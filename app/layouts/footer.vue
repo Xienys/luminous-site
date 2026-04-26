@@ -20,7 +20,7 @@ import type { NavigationMenuItem } from '@nuxt/ui'
 <template>
   <UFooter class="bg-(--footer-bg)">
       <template #left>
-        <span class='flex flex-col'>
+        <span class="flex flex-col">
             <p class="text-center">Luminous x Winevii</p>
             <p class="text-muted text-sm">
             Copyright © {{ new Date().getFullYear() }}

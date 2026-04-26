@@ -42,7 +42,7 @@ const items = computed<NavigationMenuItem[]>(() => [
             aria-label="Telegram"
             />
         </UTooltip>
-        <UTooltip text="Наш сервер в дискорд"">
+        <UTooltip text="Наш сервер в дискорд">
             <UButton
             icon="i-simple-icons-discord"
             color="neutral"
@@ -52,7 +52,7 @@ const items = computed<NavigationMenuItem[]>(() => [
             aria-label="Discord"
             />
         </UTooltip>
-        <UTooltip text="Гитхаб технического администратора"">
+        <UTooltip text="Гитхаб технического администратора">
             <UButton
             icon="i-simple-icons-github"
             color="neutral"

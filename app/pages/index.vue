@@ -25,9 +25,9 @@ const items = [
         <UPageHeader class="border-none!">
             <UPageSection class="border-none!"
                 title="LUMINOUS"
-                :ui="{title: 'font-[Stopwatch] tracking-[.22em] sm:text-5xl! md:text-6xl! lg:text-9xl! xl:text-9xl text-6xl! pixel-shadow', wrapper: 'relative overflow-hidden', container: 'relative z-10'}">
+                :ui="{title: 'font-[Stopwatch] tracking-[.22em] sm:text-5xl! md:text-6xl! lg:text-9xl! xl:text-9xl! text-5xl! pixel-shadow', wrapper: 'relative overflow-hidden', container: 'relative z-10'}">
                     <template #description>
-                        <span class="">
+                        <span>
                             <p class="text-white">
                                 Идеальный сервер для свободного выживания <br> с Create: Aeronautics.
                             </p>
