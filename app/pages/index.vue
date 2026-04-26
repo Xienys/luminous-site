@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-const serverIp = 'play.luminous-official.ru'
+const serverIp = "play.luminous-official.ru"
 
 const { copy, copied } = useClipboard({ source: serverIp })
 
@@ -12,9 +12,9 @@ const planeTransform = computed(() => {
 })
 
 const items = [
-  'https://media.discordapp.net/attachments/1496113376768561217/1496113376949178428/image.png?ex=69edf9a9&is=69eca829&hm=8735d715073924ea86f07da0a89964a0fea4ceda394d59e1366c3d40ed953d73&=&format=webp&quality=lossless',
-  'https://media.discordapp.net/attachments/1490244530467897464/1495201468469481544/image.png?ex=69edf421&is=69eca2a1&hm=b88f94d9f3b93cdbb42a7cdf433378f5feb13d800fa5ceee9ae9fd1780b3d158&=&format=webp&quality=lossless&width=1536&height=864',
-  'https://media.discordapp.net/attachments/1490244530467897464/1495081228091654427/2026-04-18_20.18.35.png?ex=69ee2ce6&is=69ecdb66&hm=1bf8424be083ed5ddc7daea0432756616284e07e1832d27931d78299e3241502&=&format=webp&quality=lossless&width=1536&height=864',
+  "https://media.discordapp.net/attachments/1496113376768561217/1496113376949178428/image.png?ex=69edf9a9&is=69eca829&hm=8735d715073924ea86f07da0a89964a0fea4ceda394d59e1366c3d40ed953d73&=&format=webp&quality=lossless",
+  "https://media.discordapp.net/attachments/1490244530467897464/1495201468469481544/image.png?ex=69edf421&is=69eca2a1&hm=b88f94d9f3b93cdbb42a7cdf433378f5feb13d800fa5ceee9ae9fd1780b3d158&=&format=webp&quality=lossless&width=1536&height=864",
+  "https://media.discordapp.net/attachments/1490244530467897464/1495081228091654427/2026-04-18_20.18.35.png?ex=69ee2ce6&is=69ecdb66&hm=1bf8424be083ed5ddc7daea0432756616284e07e1832d27931d78299e3241502&=&format=webp&quality=lossless&width=1536&height=864",
 ]
 
 </script>
@@ -25,7 +25,7 @@ const items = [
         <UPageHeader class="border-none!">
             <UPageSection class="border-none!"
                 title="LUMINOUS"
-                :ui="{title: 'font-[Stopwatch] tracking-[.22em] sm:text-5xl! md:text-6xl! lg:text-9xl! xl:text-9xl! text-5xl! pixel-shadow', wrapper: 'relative overflow-hidden', container: 'relative z-10'}">
+                :ui="{title: `font-[Stopwatch] tracking-[.22em] sm:text-5xl! md:text-6xl! lg:text-9xl! xl:text-9xl! text-5xl! pixel-shadow`, wrapper: `relative overflow-hidden`, container: `relative z-10`}">
                     <template #description>
                         <span>
                             <p class="text-white">
@@ -46,7 +46,7 @@ const items = [
                             @click="copy(serverIp)"
                             >
                             <span class="text-xl text-secondary">IP:</span>
-                            <span class="text-lg text-secondary">{{ computed(() => copied ? 'Скопировано!' : serverIp) }}</span>
+                            <span class="text-lg text-secondary">{{ computed(() => copied ? "Скопировано!" : serverIp) }}</span>
                             
                         </UButton>
                     </template>
@@ -76,15 +76,14 @@ const items = [
                             :autoplay="{ delay: 2000 }"
                             :auto-height="true"
                             wheel-gestures
-                            :prev="{ variant: 'solid' }"
-                            :next="{ variant: 'solid' }"
+                            :prev="{ variant: `solid` }"
+                            :next="{ variant: `solid` }"
                             :items="items"
                             :ui="{
-                            item: 'basis-1/3 ps-0',
-                            prev: 'sm:inset-s-8',
-                            next: 'sm:inset-e-8',
-                            container: 'ms-0',
-                            
+                            item: `basis-1/3 ps-0`,
+                            prev: `sm:inset-s-8`,
+                            next: `sm:inset-e-8`,
+                            container: `ms-0`,
                             }"
                         >
                         <img :src="item" width="380" height="320" loading="lazy">
@@ -120,7 +119,7 @@ const items = [
                         spotlight-color="primary"
                         to="/modpack"
                         variant="outline"
-                        :ui="{ root: 'bg-primary/10  hover:bg-sky-700' }"
+                        :ui="{ root: `bg-primary/10  hover:bg-sky-700` }"
                         >
                         <template #title>
                             <p class="text-white text-nowrap font-normal text-lg" >Скачайте сборку</p>
@@ -133,7 +132,7 @@ const items = [
                         spotlight
                         spotlight-color="primary"
                         variant="outline"
-                        :ui="{ root: 'bg-sky-700/10 ' }"
+                        :ui="{ root: `bg-sky-700/10` }"
                         >
                         <template #title>
                             <p class="text-white text-nowrap font-normal text-lg" >Зайдите на сервер</p>

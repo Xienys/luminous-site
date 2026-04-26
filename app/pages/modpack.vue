@@ -13,7 +13,7 @@ interface Releases {
     }]
 }
 
-const { data } = await useFetch<Releases[]>('https://api.github.com/repos/Xienys/Luminous-modpack/releases')
+const { data } = await useFetch<Releases[]>("https://api.github.com/repos/Xienys/Luminous-modpack/releases")
 
 </script>
 <template>
@@ -29,11 +29,11 @@ const { data } = await useFetch<Releases[]>('https://api.github.com/repos/Xienys
                         :title="value.name"
                         :description="value.body"
                         :date="value.created_at",
-                        :ui="{description: 'font-[MinecraftTenLowercase]', date: 'font-[MinecraftTenLowercase] text-sm'}"
+                        :ui="{description: `font-[MinecraftTenLowercase]`, date: `font-[MinecraftTenLowercase] text-sm`}"
                         :badge="{
-                        label: 'Release',
-                        color: 'primary',
-                        variant: 'outline',
+                        label: `Release`,
+                        color: `primary`,
+                        variant: `outline`,
                         }"
                         > <template #body>
                             <div class="flex flex-col gap-2 pt-2">

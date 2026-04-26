@@ -8,9 +8,7 @@ import Header from './layouts/header.vue';
   <UApp>
     <Header></Header>
     <UMain>
-      <NuxtLayout>
-            <NuxtPage />
-      </NuxtLayout>
+      <NuxtPage />
     </UMain>
   </UApp>
   <Footer></Footer>

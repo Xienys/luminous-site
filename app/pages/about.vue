@@ -1,29 +1,28 @@
 <script setup lang="ts">
-import type { AccordionItem } from '@nuxt/ui'
 
 useHead({
   bodyAttrs: {
-    class: 'bg-[#74baf5] bg-cover bg-fixed ',
-    style: '--footer-bg: #78bef2;'
+    class: `bg-[#74baf5] bg-cover bg-fixed`,
+    style: `--footer-bg: #78bef2`
   }
 })
 
-const logos = ['aero', 'cc', 'cdg', 'vista', 'exposure', 'farm', 'voxy', 'snr', 'create', 'cee']
+const logos = ["aero", "cc", "cdg", "vista", "exposure", "farm", "voxy", "snr", "create", "cee"]
 
 const features = [{
-    logo: 'i-lucide:cloud',
-    title: 'ПОЛЕТ',
-    description: 'Твоя база больше не привязана к координатам. Построй гигантский летучий дредноут, мобильную торговую лавку или маневренный истребитель.'
+    logo: "i-lucide:cloud",
+    title: "ПОЛЕТ",
+    description: "Твоя база больше не привязана к координатам. Построй гигантский летучий дредноут, мобильную торговую лавку или маневренный истребитель."
 },
 {
-    logo: 'i-lucide:brush',
-    title: 'ТВОРЧЕСТВО',
-    description: 'У нас ты волен делать то - чего жаждет твоя душа. Приветствуется любые виды творчества, правила максимально упрощены и лояльны.'
+    logo: "i-lucide:brush",
+    title: "ТВОРЧЕСТВО",
+    description: "У нас ты волен делать то - чего жаждет твоя душа. Приветствуется любые виды творчества, правила максимально упрощены и лояльны."
 },
 {
-    logo: 'i-lucide:badge-russian-ruble',
-    title: 'ДОСТУПНОСТЬ',
-    description: 'Наш сервер абсолютно бесплатен. У нас нет игровых привелегий дарующих преимущество над другими игроками или платной проходки - все совершенно бесплатно.'
+    logo: "i-lucide:badge-russian-ruble",
+    title: "ДОСТУПНОСТЬ",
+    description: "Наш сервер абсолютно бесплатен. У нас нет игровых привелегий дарующих преимущество над другими игроками или платной проходки - все совершенно бесплатно."
 }]
 </script>
 
@@ -57,7 +56,7 @@ const features = [{
             <UContainer>
                 <UMarquee class="w-full" reverse pause-on-hover
                     :overlay="false"
-                    :ui="{ root: '[--gap:--spacing(20)]', content: 'w-auto py-1' }">
+                    :ui="{ root: `[--gap:--spacing(20)]`, content: `w-auto py-1` }">
                     <img v-for="logo in logos" :src="`/logos/${logo}.webp`" class="size-20 rounded-full shrink-0" alt="logo">
                 </UMarquee>
                 <USeparator class="pt-90" color="primary" size="lg" label="FREEDOM" />
