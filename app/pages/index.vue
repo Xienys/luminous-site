@@ -43,10 +43,11 @@ const items = [
                         <UButton
                             color="neutral"
                             class="p-3 tracking-widest rounded-xl"
+                            size="xl"
                             @click="copy(serverIp)"
                             >
                             <span class="text-xl text-secondary">IP:</span>
-                            <span class="text-lg text-secondary">{{ computed(() => copied ? "Скопировано!" : serverIp) }}</span>
+                            <span class="sm:text-sm lg:text-lg text-md text-secondary">{{ computed(() => copied ? "Скопировано!" : serverIp) }}</span>
                             
                         </UButton>
                     </template>
@@ -57,7 +58,7 @@ const items = [
                             <img 
                                 src="/plane.webp" 
                                 alt="Aeronautics Plane"
-                                class="w-[120%] max-w-none scale-45 object-contain"
+                                class="w-[120%] max-w-none sm:scale-60 scale-45 object-contain"
                                 :style="{ transform: planeTransform }"
                                 loading="lazy"
                             />

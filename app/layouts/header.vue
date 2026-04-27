@@ -5,19 +5,19 @@ const route = useRoute()
 
 const items = computed<NavigationMenuItem[]>(() => [
   {
-    label: 'ГЛАВНАЯ',
-    to: '/',
-    active: route.path === '/',
+    label: "ГЛАВНАЯ",
+    to: "/",
+    active: route.path === "/",
   },
   {
-    label: 'О СЕРВЕРЕ',
-    to: '/about',
-    active: route.path.startsWith('/about')
+    label: "О СЕРВЕРЕ",
+    to: "/about",
+    active: route.path.startsWith("/about")
   },
   {
-    label: 'СБОРКА',
-    to: '/modpack',
-    active: route.path.startsWith('/modpack')
+    label: "СБОРКА",
+    to: "/modpack",
+    active: route.path.startsWith("/modpack")
   },
 ])
 </script>
@@ -25,14 +25,14 @@ const items = computed<NavigationMenuItem[]>(() => [
 <template>
   <UHeader class="bg-default/50 border-none!">
     <template #title>
-      <img src="/logo.png" alt="" class="h-8 w-full">
+      <img src="/logo.png" alt="logo" class="h-8 w-full">
     </template>
 
     <UNavigationMenu :items="items" />
 
     <template #right>
 
-        <UTooltip text="Наш канал в телеграм"">
+        <UTooltip text="Наш канал в телеграм">
             <UButton
             icon="i-simple-icons-telegram"
             color="neutral"

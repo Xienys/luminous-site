@@ -10,6 +10,6 @@ import Header from './layouts/header.vue';
     <UMain>
       <NuxtPage />
     </UMain>
+    <Footer></Footer>
   </UApp>
-  <Footer></Footer>
 </template>

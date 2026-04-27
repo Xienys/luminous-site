@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import type { de } from '@nuxt/ui/runtime/locale/index.js';
 
 
 interface Releases {
