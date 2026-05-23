@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-const serverIp = "play.luminous-official.ru"
+const serverIp = "play.luminousmc.ru"
 
 const { copy, copied } = useClipboard({ source: serverIp })
 
@@ -12,9 +12,9 @@ const planeTransform = computed(() => {
 })
 
 const items = [
-  "https://media.discordapp.net/attachments/1496113376768561217/1496113376949178428/image.png?ex=69edf9a9&is=69eca829&hm=8735d715073924ea86f07da0a89964a0fea4ceda394d59e1366c3d40ed953d73&=&format=webp&quality=lossless",
-  "https://media.discordapp.net/attachments/1490244530467897464/1495201468469481544/image.png?ex=69edf421&is=69eca2a1&hm=b88f94d9f3b93cdbb42a7cdf433378f5feb13d800fa5ceee9ae9fd1780b3d158&=&format=webp&quality=lossless&width=1536&height=864",
-  "https://media.discordapp.net/attachments/1490244530467897464/1495081228091654427/2026-04-18_20.18.35.png?ex=69ee2ce6&is=69ecdb66&hm=1bf8424be083ed5ddc7daea0432756616284e07e1832d27931d78299e3241502&=&format=webp&quality=lossless&width=1536&height=864",
+  "https://media.discordapp.net/attachments/1507467258782421073/1507467259289800764/image.png?ex=6a12aa8a&is=6a11590a&hm=78e92971d3f52e0efb8d204d90492dedca31dd74fbdec1502ed1389effecab4a&=&format=webp&quality=lossless",
+  "https://media.discordapp.net/attachments/1505205612148166808/1505205613548802229/2026-05-16_16.47.25.png?ex=6a125937&is=6a1107b7&hm=1cfffc4f7f9dd4ed607cd178badd77f7e450eb69ca254744fb5679b1a6b4cbd2&=&format=webp&quality=lossless&width=1644&height=864",
+  "https://media.discordapp.net/attachments/1505635875801792663/1505635876313628672/2026-05-17_21.18.11.png?ex=6a12986e&is=6a1146ee&hm=827c5a7c83cfea35035a24a663f722e604ee957aa534814082d27c65eab649e6&=&format=webp&quality=lossless&width=1644&height=864",
 ]
 
 </script>
