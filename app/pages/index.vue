@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-const serverIp = "play.luminousmc.ru"
+const serverIp = "play.luminousmc.ru:30010"
 
 const { copy, copied } = useClipboard({ source: serverIp })
 
