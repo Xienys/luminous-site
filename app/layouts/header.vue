@@ -19,6 +19,18 @@ const items = computed<NavigationMenuItem[]>(() => [
     to: "/modpack",
     active: route.path.startsWith("/modpack")
   },
+  {
+    label: "ВИКИ",
+    to: "https://wiki.luminousmc.ru",
+    active: route.path.startsWith("/modpack"),
+    target: '_blank'
+  },
+  {
+    label: "ДОНАТ",
+    to: "https://donate.luminousmc.ru",
+    active: route.path.startsWith("/modpack"),
+    target: '_blank'
+  },
 ])
 </script>
 
